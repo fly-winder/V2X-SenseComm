@@ -1,0 +1,37 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.ipynb_checkpoints/
+.idea/
+.vscode/
+
+# Environments and local configuration
+.env
+.venv/
+venv/
+env/
+
+# Runtime UI files
+app/generated/
+
+# Generated datasets and outputs
+dataset/
+dataset_*/
+output/
+outputs/
+
+# Large generation assets hosted on Hugging Face
+codebook/*.npz
+textures/*.exr
+
+# Training artifacts
+*.pt
+*.pth
+*.ckpt
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db

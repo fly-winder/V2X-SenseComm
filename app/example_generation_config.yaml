@@ -1,0 +1,50 @@
+run:
+  scene_ids:
+    - scene_12
+  speed_list:
+    - 25.0
+  total_distance: 100.0
+  frame_interval_s: 0.1
+  weather_type: clear
+  output_root: dataset
+  motion_axis: y
+  enable_occluder_cars: false
+
+traffic:
+  road_center_x: 30.0
+  y_extent: 50.0
+  road_center_y: 45.0
+  x_min: 20.0
+  x_max: 120.0
+
+sensors:
+  camera:
+    fov: 120.0
+    resolution:
+      - 512
+      - 512
+    num_samples: 128
+  lidar:
+    num_channels: 128
+    h_resolution: 256
+    max_range: 150.0
+  radar:
+    array_rows: 4
+    array_cols: 8
+    carrier_frequency: 77000000000.0
+    bandwidth: 200000000.0
+    num_chirps: 8
+    num_samples: 256
+  gps:
+    noise_std:
+      - 0.5
+      - 0.5
+      - 0.5
+
+communication:
+  carrier_frequency: 7000000000.0
+  bs_tx_num_rows: 16
+  bs_tx_num_cols: 64
+  num_subcarriers: 128
+  codebook_file: codebook/fine_codebook.npz
+  top_k: 5
